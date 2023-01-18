@@ -1,5 +1,5 @@
 def make_snippet(str)
-    fail "Nothing has been entered" if str == ""
+    fail "Nothing has been entered" if str.empty?
     split = str.split(" ")
     if split.length <= 5
         str
