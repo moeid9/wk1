@@ -42,4 +42,17 @@ describe "check_grammar method" do
         end
     end
 
+    context "given sentence with different ending punctuation" do
+        it "returns true" do
+            result = check_grammar("Hello, I am Moeid?")
+            expect(result).to eq true
+        end
+    end
+
+    context "given sentence with different ending punctuation" do
+        it "returns true" do
+            result = check_grammar("Hello, I am Moeid!")
+            expect(result).to eq true
+        end
+    end
 end
